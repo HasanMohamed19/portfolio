@@ -51,13 +51,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Backend Engineer who is highly interested in AI Engineer",
   skills: [
-    emoji(
-      "⚡ Develop highly performanct & secure Backend systems"
-    ),
+    emoji("⚡ Develop highly performanct & secure Backend systems"),
     emoji("⚡ Implement AI/ML solutions"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase & AWS"
-    )
+    emoji("⚡ Integration of third party services such as Firebase & AWS")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -111,7 +107,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
-    },
+    }
     // todo: add support for svg for spring boot c# etc
   ],
   display: true // Set false to hide this section, defaults to true
@@ -260,20 +256,20 @@ const achievementSection = {
     {
       title: "Backbase backend certified - 2025",
       // subtitle:
-        // "Backbase ",
+      // "Backbase ",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Backbace certification",
       footerLink: [
         {
           name: "Certification",
           url: "https://www.linkedin.com/in/hasan-mohamed-982106246/overlay/1755103124453/single-media-viewer/?profileId=ACoAADziWfIByl2nS2n1IC8mgu8FGiV7B2Zq6Cs"
-        },
+        }
       ]
     },
     {
       title: "AWS Certified AI Practitioner",
       // subtitle:
-        // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
       image: require("./assets/images/aws_logo.jpg"),
       imageAlt: "AWS Logo",
       footerLink: [
@@ -286,7 +282,7 @@ const achievementSection = {
     {
       title: "AWS Certified Developer – Associate",
       // subtitle:
-        // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
       image: require("./assets/images/aws_logo.jpg"),
       imageAlt: "AWS Logo",
       footerLink: [
@@ -297,8 +293,10 @@ const achievementSection = {
       ]
     },
     {
-      title: "CMI Level 3 Certificate in Principles of Management and Leadership",
-      subtitle: "Gained this certification as part of the CPISP shcolarship program",
+      title:
+        "CMI Level 3 Certificate in Principles of Management and Leadership",
+      subtitle:
+        "Gained this certification as part of the CPISP shcolarship program",
       image: require("./assets/images/backbaseLogo.png"),
       imageAlt: "CMI Logo",
       footerLink: []
