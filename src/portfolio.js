@@ -27,7 +27,7 @@ const greeting = {
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: false // Set false to hide this section, defaults to true
+  displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
@@ -52,11 +52,11 @@ const skillsSection = {
   subTitle: "Backend Engineer who is highly interested in AI Engineer",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly performanct & secure Backend systems"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Implement AI/ML solutions"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase & AWS"
     )
   ],
 
@@ -73,16 +73,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "nodejs",
@@ -115,7 +107,12 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    // todo: add support for svg for spring boot c# etc
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -127,23 +124,15 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Bahrain Polytechnic",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/polytechnicLogo.png"),
       subHeader: "Bachelor of ICT in programming",
       duration: "September 2021 - June 2025",
-      desc: "Won best grad project award for best use of technology",
+      // desc: "Won best grad project award for best use of technology",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Won best grad project award for best use of technology",
+        "Graduated with 3.92 GPA"
       ]
     }
-    // {
-    //   schoolName: "Stanford University",
-    //   logo: require("./assets/images/stanfordLogo.png"),
-    //   subHeader: "Bachelor of Science in Computer Science",
-    //   duration: "September 2013 - April 2017",
-    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    // }
   ]
 };
 
@@ -162,7 +151,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -175,28 +164,45 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      company: "Array Innovation",
+      companylogo: require("./assets/images/array_logo.png"),
+      date: "Feb 2025 – Present",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Started as a Java Spring-boot backed developer intern for Array World, utilizing AWS for cloud and REDIS for caching. Then promoted to full-time in May.",
+        "Won best award for best use of emerging technologies for CLP Project.",
+        "Currently working for a client as Backend engineer using Java & Spring Boot on a microservice based applications."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "AWS CIC Intern",
+      company: "AWS",
+      companylogo: require("./assets/images/aws_logo.jpg"),
+      date: "Sep 2024 – Jan 2025",
+      // desc: "Worked with AWS and Education & Training Quality Authority (BQA) in collaboration with AWS-CIC Program and Bahrain Polytechnic to develop InsightAI, GenAI solution for Bahrain's Educational Institutes. It is a platform that provides the users access to statistics about the educational sector in Bahrain, in addition to a chatbot that allows the user to get insights about uploaded BQA reports.",
+      descBullets: [
+        "Built my Senior project with AWS CIC and Education & Training Quality Authority (BQA) using AWS Services.",
+        "Was responsible for Bedrock, LLMs, AI, RAG, Prompt Engineering, agents and text extraction part of the project.",
+        "It is a system for analyzing BQA reports managing them with the ability to ask a chatbot about them."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Machine Learning Intern",
+      company: "Unipal",
+      companylogo: require("./assets/images/unipal_bh_logo.jpg"),
+      date: "Aug 2024 – Nov 2024",
+      desc: "Building Recommendation system for Unipal’s mobile app using techniques such as Collaborative filtering etc., to add more personalization and host it on AWS with lambda and docker."
+    },
+    {
+      role: "Android developer",
+      company: "VIITech",
+      companylogo: require("./assets/images/viitech_logo.jpg"),
+      date: "Jul 2022 – Jan 2023",
+      // desc: "Building Recommendation system for Unipal’s mobile app using techniques such as Collaborative filtering etc., to add more personalization and host it on AWS with lambda and docker."
+      descBullets: [
+        "Started as an intern for two months (July & August 2022) then got promoted to part-time in September 2022. Worked on various apps.",
+        "Managed to implement new features and improve existing ones on the apps using both Java and Kotlin, and migrated code from Java to Kotlin."
+      ]
     }
   ]
 };
@@ -206,7 +212,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -239,7 +245,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -252,52 +258,50 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      title: "Backbase backend certified - 2025",
+      // subtitle:
+        // "Backbase ",
       image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      imageAlt: "Backbace certification",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.linkedin.com/in/hasan-mohamed-982106246/overlay/1755103124453/single-media-viewer/?profileId=ACoAADziWfIByl2nS2n1IC8mgu8FGiV7B2Zq6Cs"
         },
+      ]
+    },
+    {
+      title: "AWS Certified AI Practitioner",
+      // subtitle:
+        // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      image: require("./assets/images/aws_logo.jpg"),
+      imageAlt: "AWS Logo",
+      footerLink: [
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Credly",
+          url: "https://www.credly.com/badges/21923259-dfc2-4944-8e96-afe40f0d3e2c/linked_in_profile"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "AWS Certified Developer – Associate",
+      // subtitle:
+        // "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      image: require("./assets/images/aws_logo.jpg"),
+      imageAlt: "AWS Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Credly",
+          url: "https://www.credly.com/badges/742ad7a8-1325-44fd-88f6-545c01c63280/linked_in_profile"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "CMI Level 3 Certificate in Principles of Management and Leadership",
+      subtitle: "Gained this certification as part of the CPISP shcolarship program",
+      image: require("./assets/images/backbaseLogo.png"),
+      imageAlt: "CMI Logo",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -324,7 +328,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +347,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +360,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,15 +376,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  // number: "+92-0000000000",
+  email_address: "thehasanm03@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
